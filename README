@@ -1,0 +1,4 @@
+This is my attempt to simplify client transaction with server.
+Hardware: BeagleBone Blue
+For this to work , first use connmanctl to connect to wifi.
+
