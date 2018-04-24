@@ -8,14 +8,14 @@
 #include "ClientSocket.h"
 using namespace std;
 
-#define  PORT		(80)
+#define  PORT		(54321)
 
 int main(void)
 {
     int ret;
 	char data[] = "Data from Client";
 	char rcvdBuffer[100] = {0};
-    ClientSocket AppSocket(PORT, "google.com");
+    ClientSocket AppSocket(PORT, "192.168.8.1");
     cout << "Starting CLient" << endl;
     AppSocket.createTCPSocket();
     AppSocket.connectToServer();

@@ -72,3 +72,15 @@ int ClientSocket::getDataFromServer(const char * buffer, int readLen)
 	cout << buffer << endl;    
     return(1);
 }
+
+int ClientSocket::closeConnection(void)
+{
+	int ret;
+	ret = close(socketid);	
+	if(ret < 0)
+	{
+		cout << "Error Closing Socket Connection" << endl;
+	}
+
+    	return(1);
+}

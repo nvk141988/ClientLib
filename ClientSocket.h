@@ -23,6 +23,7 @@ class ClientSocket
         int connectToServer();
         int sendDataToServer(const char* data, int dataLen);
         int getDataFromServer(const char* buffer, int readLen);
+	int closeConnection();
 };
 
 
